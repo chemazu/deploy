@@ -1,6 +1,6 @@
 {
-  "homepage": "https://chemazu.github.io/fish/",
-  "name": "deploy",
+  "homepage": "https://chemazu.github.io/deploy/",
+  "name": "fish",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild":"cd client && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [
